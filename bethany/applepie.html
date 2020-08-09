@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Welcome Rohit Pie shop</title>
+    <meta name="author" content="Rohit pie shop">
+    <meta name="description" content="Store from Rohit" >
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        body{
+            background-color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            background-image: url(images/pattern.png);
+        }
+        #mainheader{
+            background-color: red;
+        }
+        nav{
+            height: 60px;
+            width: 1000px;
+            margin: 0 auto 20px
+        }
+        #leftmenu{
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .searchbox{
+            padding: 5px;
+            margin: 10px 10px
+            width: 200px
+        }
+        footer{
+            clear: both;
+            width: 100%;
+            
+        }
+        main{
+            float:right;
+            width: 70%;
+        }
+
+    </style>
+    <script src="save.js"></script>
+    
+</head>
+
+
+
+<body>
+    <header id="mainheader">
+        <nav>
+            <img src="images/pie.png" alt="pie.png" width=50px height="50px"> 
+            Header goes here
+
+        </nav>
+    </header>   
+
+    <div style="width: 1000px; margin-left: auto; margin-right: auto;">
+        <aside id="leftmenu">
+            <img src="images/bethanylogo.png" alt="bethanylogo.png" width=100>
+            <header>
+                <h4 style="text-align: center;"> Browse our Pie</h4>
+            </header>
+            <input type="search" class="searchbox" placeholder="Search our Stores">
+        </aside>
+
+        <main id="main">
+            <header>
+               <h1 style="color: purple;">Apple Pie </h1> 
+            </header>
+                <figure>
+                    <img src="images/products/applepie.jpg" alt="applepie" width=500>
+                    <figcaption style="color: purple;">Our world famous Apple pie</figcaption>
+                </figure>
+            
+            <p>
+                <button onclick="save()" type="button"> Save as Favorite</button>
+                <span id="favorite"></span>
+                
+            </p>
+        
+            <div id='hidefavorite' style="visibility: hidden;">
+            <p>
+                <button onclick="remove()" type="button"> Remove as Favorite</button>
+                <span id="Notfavorite"></span>
+                
+            </p>
+        </div>
+          
+            <!-- {% else %}
+            <p>Already favorite</p>
+            {% endif %} -->
+            
+            <div style="background-color: whitesmoke;">
+                <strong> Price: 12.95$</strong>
+                <h3>Description</h3>
+               
+                    <p>
+                        Bethany received the recipe for this delicious apple pie from her grandmother. At the age of 5,
+                        she
+                        was
+                        already baking this <em>all-American traditional apple</em> pie at her home.
+                        As the recipe goes a long way back, it contains the most typical ingredients used for so many
+                        years
+                        to
+                        make this classic even today one of our most popular pies.
+                    </p>
+                    <p>
+                        This pie is available <em> everyday</em>
+                        <span style="color: green;">
+                            you can serve is cold or hot. 
+                        </span>
+                        Your house will smell like bethany
+                    </p>
+                <blockquote>
+                    This recipe has been in our family for generations. 
+                    We hope you enjoy this pie as we do -
+                            Bethany
+                </blockquote>
+                <p> <small> We try to limit co <sub>2</sub> in our drinks</small></p>
+                <hr><br>
+                <h2 style="color: indigo;"> How to make this Pie</h2>
+                <ol type="A">
+                    <li>
+                        First, we combine sugar, flour and spices. We toss the apples with some lemon juice and add
+                        sugar.
+                    </li>
+                    <li>We then create the bottom crust and fill that with apple mixture. We put some butter on
+                        that. We
+                        then roll remaining crust to fit top of pie.
+                    </li>
+                    <li>Then we beat the eggs white until we have a foamy mix. That is then brushed over the crust.
+                        We
+                        sprinkle some extra sugar.
+                    </li>
+                    <li>Then the pie goes into the oven at 360° for 35 minutes. When ready, we let it cool on a wire
+                        rack.
+                    </li>
+                </ol>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>butter</li>
+                    <li>Buter</li>
+                    <li>Sugar</li>
+                    <ul>
+                        <li>Regular sugar</li>
+                        <li>Brown sugar</li>
+                        <li>Caster sugar</li>
+                    </ul>
+                </ul>
+            </div>
+            
+           
+
+        </main>
+        <footer>
+            <p>Our Address is <address >Rohit Pies Shop</address> </p>
+
+            <br><small>&copy; Copyright 2020 All rights Reserved!</small>
+
+        </footer>
+
+    </div>
+    
+</body>
+
+
+</html>
+
+
+  
+   
+   
