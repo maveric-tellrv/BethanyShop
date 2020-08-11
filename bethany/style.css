@@ -49,3 +49,33 @@ nav>ul>li a{
     padding: 16px;
     text-decoration: none;
 }
+
+input[type="email"],select{
+    background-color: purple;
+    color: white;
+}
+
+fieldset{
+    border-color: purple;
+    border-width: 3px;
+    border-style: solid;
+}
+
+fieldset>legend{
+    color: purple;
+}
+p>label{
+    display: block;
+}
+
+input,textarea{
+    border-radius: 7px;
+}
+
+input:valid{
+    border-color: green;
+}
+
+input:invalid{
+    border-color: red;
+}

@@ -6,45 +6,9 @@
     <meta name="author" content="Rohit pie shop">
     <meta name="description" content="Store from Rohit" >
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body{
-            background-color: whitesmoke;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            background-image: url(images/pattern.png);
-        }
-        #mainheader{
-            background-color: red;
-        }
-        nav{
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px
-        }
-        #leftmenu{
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-        .searchbox{
-            padding: 5px;
-            margin: 10px 10px
-            width: 200px
-        }
-        footer{
-            clear: both;
-            width: 100%;
-            
-        }
-        main{
-            float:right;
-            width: 70%;
-        }
-
-    </style>
+   
 </head>
 
 
@@ -52,23 +16,42 @@
 <body>
     <header id="mainheader">
         <nav>
-            <img src="images/pie.png" alt="pie.png" width=50px height="50px"> 
-            Header goes here
+            <ul>
+                <li><img src="images/pie.png" alt="pie.png" width=50px height="50px"> </li>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="pieoverview.html">Pieoverview</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="Contact.html">Contactus</a></li> 
+                
+            </ul>
+            
+           
 
         </nav>
     </header>   
 
     <div style="width: 1000px; margin-left: auto; margin-right: auto;">
         <aside id="leftmenu">
-            <img src="images/bethanylogo.png" alt="bethanylogo.png" width=100>
+            <a href="index.html"><img src="images/bethanylogo.png" alt="bethanylogo.png" width=100 /> </a>
             <header>
                 <h4 style="text-align: center;"> Browse our Pie</h4>
             </header>
-            <input type="search" class="searchbox" placeholder="Search our Stores">
+            <ul>
+               <li><a href="pieoverview.html">All Pies</a></li> 
+                <li><a href="applepie.html">Apple Pie</a></li>
+                <li><a href="#promos">Promotions</a></li>
+            </ul>
+
+            <form action="search.html" enctype="application/x-www-form-urlencoded" method="POST">
+                <input name="q" placeholder="Search your Pie" >
+                <input type="submit" style="border-color: brown;">
+
+            </form>
+           
         </aside>
 
         <main id="main">
-           
+            
 
         </main>
         <footer>
@@ -79,7 +62,7 @@
         </footer>
 
     </div>
-
+    <!-- <script src="save.js"></script> -->
 </body>
 
 
